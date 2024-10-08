@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainheading">
+        <div class="mainheadingletter">f</div>
+        <div class="mainheadingletter">l</div>
+        <div class="mainheadingletter">e</div>
+        <div class="mainheadingletter">x</div> 
+        <div class="mainheadingletter">b</div>
+        <div class="mainheadingletter">o</div>
+        <div class="mainheadingletter">x</div>
+    </div>
+    
+    <nav id="navigation">
+            <div id="flexDirection"><strong>flex-direction: </strong>The flex-direction property defines in which direction the container wants to stack the flex items.
+                <ul><u>Property values</u>
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+    
+                </ul>
+            </div>
+        
+    
+            <div id="flexwrap"><strong>flex-wrap: </strong>The flex-wrap property specifies whether the flex items should wrap or not.
+                <ul><u>Property values</u>
+                   <li>nowrap</li>
+                   <li>wrap</li>
+                   <li>wrap-reverse</li>
+            </ul>
+           </div>
+
+           <div id="justify-content"><strong>justify-content: </strong>The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+            <ul><u>Property values</u>
+               <li>flex-start</li>
+               <li>flex-end</li>
+               <li>center</li>
+               <li>space-between</li>
+               <li>space-around</li>
+               <li>space-evenly</li>
+            </ul>
+           </div>
+           <div id="align-items"><strong>align-items: </strong>The align-items property specifies the default alignment for items inside a flexbox or grid container.
+            <ul><u>Property values</u>
+               <li>flex-start</li>
+               <li>flex-end</li>
+               <li>center</li>
+               <li>stretch</li>
+               <li>baseline</li>
+            </ul>
+           </div>
+           <div id="align-content"><strong>align-content: </strong>The align-content property specifies how flex lines are distributed along the cross axis in a flexbox container.
+            <ul><u>Property values</u>
+               <li>flex-start</li>
+               <li>flex-end</li>
+               <li>center</li>
+               <li>space-between</li>
+               <li>space-around</li>
+               <li>space-evenly</li>
+               <li>stretch</li>
+               <li>baseline</li>
+            </ul>
+           </div>
+    </nav>
+    <h1>stretch property</h1>
+    <p>Items are stretched to fit the container</p>
+<div id="stretch">
+    <div id="stretchletters">s</div>
+    <div id="stretchletters">t</div>
+    <div id="stretchletters">r</div>
+    <div id="stretchletters">e</div>
+    <div id="stretchletters">t</div>
+    <div id="stretchletters">c</div>
+    <div id="stretchletters">h</div>
+</div>
+
+<h1>baseline property</h1>
+<p>Items are positioned at the baseline of the container</p>
+<div id="baseline">
+    <div id="baselineletters" style="font-size: 11rem; color: deeppink;">b</div>
+    <div id="baselineletters" style="font-size: 1rem;">a</div>
+    <div id="baselineletters">s</div>
+    <div id="baselineletters" style="font-size: 2rem; background-color: aqua; color: black;">e</div>
+    <div id="baselineletters">l</div>
+    <div id="baselineletters" style="color: chartreuse;">i</div>
+    <div id="baselineletters">n</div>
+    <div id="baselineletters" style="font-size: 10rem; background-color: darkorange;">e</div>
+</div>
+
+
+<h1>flex items: order</h1>
+<div class="order">
+    <div class="orderletters" style="order: 3;">e</div>
+    <div class="orderletters" style="order: 4;" >r </div>
+    <div class="orderletters" style="order: 2;" >d </div>
+    <div class="orderletters">o </div>
+    <div class="orderletters" style="order: 1;" >r </div>
+</div>
+
+<h1>flex items: align-self</h1>
+<p>The align-self property specifies the alignment in the block direction for the selected item inside a flexbox or grid container.
+
+</p>
+<div class="alignSelf">
+    <div class="alignselfletters" style="align-self: start;">a</div>
+    <div class="alignselfletters" style="align-self:center;" >l</div>
+    <div class="alignselfletters" style="align-self: end;">i </div>
+    <div class="alignselfletters" style="align-self: center;">g </div>
+    <div class="alignselfletters">n </div>
+    <div class="alignselfletters" style="align-self: center;">s </div>
+    <div class="alignselfletters">e </div>
+    <div class="alignselfletters" style="align-self: center;">l </div>
+    <div class="alignselfletters" style="align-self: end;">f</div>
+</div> 
+    
+<h1>flex items: flex-grow</h1>
+<p>The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+    A number specifying how much the item will grow relative to the rest of the flexible items. Default value is 0
+</p>
+<div class="flexGrow">
+    <div class="flexgrowletters" style="flex-grow: 3; background-color: lawngreen;">f</div>
+    <div class="flexgrowletters">l</div>
+    <div class="flexgrowletters">e </div>
+    <div class="flexgrowletters">x </div>
+    <div class="flexgrowletters">g </div>
+    <div class="flexgrowletters" style="flex-grow: 4; background-color: lawngreen;"> r</div>
+    <div class="flexgrowletters"> o</div>
+    <div class="flexgrowletters" style="flex-grow: 8; background-color: lawngreen;">w</div>
+</div> 
+<h1>flex items: flex-shrink</h1>
+<p>The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+    A number specifying how much the item will shrink relative to the rest of the flexible items. Default value is 1
+</p>
+<div class="flexShrink">
+    <div class="flexshrinkletters">f</div>
+    <div class="flexshrinkletters">l</div>
+    <div class="flexshrinkletters">e </div>
+    <div class="flexshrinkletters">x </div>
+    <div class="flexshrinkletters">s</div>
+    <div class="flexshrinkletters"> h</div>
+    <div class="flexshrinkletters"> r</div>
+    <div class="flexshrinkletters" >i</div>
+    <div class="flexshrinkletters">n</div>
+    <div class="flexshrinkletters" style="flex-shrink: 3;" >k</div>
+</div>   
+    
+<h1>flex items: flex-basis </h1>
+<p>The flex-basis property specifies the initial length of a flexible item.</p>
+<div class="flexBasis">
+    <div class="flexbasisletters">f</div>
+    <div class="flexbasisletters">l</div>
+    <div class="flexbasisletters">e </div>
+    <div class="flexbasisletters">x </div>
+    <div class="flexbasisletters">b</div>
+    <div class="flexbasisletters">a</div>
+    <div class="flexbasisletters">s</div>
+    <div class="flexbasisletters">i</div>
+    <div class="flexbasisletters">s</div>
+</div> 
+    
+</body>
+</html>
